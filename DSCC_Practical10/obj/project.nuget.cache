@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5yod0Eb5fQ4=",
+  "success": true,
+  "projectFilePath": "D:\\Manoj\\Studies\\VESIT\\SEM 3\\LAB\\DSCC\\Code\\DSCC_Practical10\\DSCC_Practical10.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Manoj Kumar\\.nuget\\packages\\awssdk.core\\3.7.400.45\\awssdk.core.3.7.400.45.nupkg.sha512",
+    "C:\\Users\\Manoj Kumar\\.nuget\\packages\\awssdk.s3\\3.7.405.9\\awssdk.s3.3.7.405.9.nupkg.sha512"
+  ],
+  "logs": []
+}

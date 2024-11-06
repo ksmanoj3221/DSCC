@@ -1,0 +1,44 @@
+# Maven target directory
+**/target/
+
+# Eclipse IDE files
+.project
+.classpath
+.settings/
+
+# Eclipse build output folder (used in some cases)
+bin/
+
+# Java compiled class files
+*.class
+
+# JAR and WAR files
+*.jar
+*.war
+
+# IntelliJ IDEA files (if used at some point, just in case)
+.idea/
+
+# Node.js dependencies
+node_modules/
+
+# Operating system files (Mac, Windows, Linux)
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Maven wrapper (if you use it)
+.mvn/
+*.mvn/
+
+# Eclipse generated Java source files
+*.src/
+
+# Eclipse file history (in case Eclipse saves file histories in the project)
+*.bak

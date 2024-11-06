@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddValuesInArray</title>
+</head>
+<body>
+    <h1>Welcome to the OddValuesInArray App!</h1>
+    
+    <h2>Odd Values Filter</h2>
+    <form action="/sum" method="get">
+        <label for="numbers">Enter numbers (comma separated):</label><br>
+        <input type="text" id="numbers" name="numbers" value="" required><br><br>
+        <input type="submit" value="Show Odd Values">
+    </form>
+
+    <!-- Displaying odd values if returned from the /sum endpoint -->
+    <div id="result">
+        <h2>Odd Values: <span id="odd-values">None</span></h2>
+    </div>
+
+    <script>
+        // Get the URL parameters (numbers and oddValues)
+        const urlParams = new URLSearchParams(window.location.search);
+        const numbers = urlParams.get('numbers');
+        const oddValues = urlParams.get('oddValues');
+
+        // If numbers exist, put them in the input field
+        if (numbers) {
+            document.getElementById('numbers').value = numbers;
+        }
+
+        // If oddValues exist, display them
+        if (oddValues) {
+            document.getElementById('odd-values').innerText = oddValues;
+        }
+    </script>
+</body>
+</html>

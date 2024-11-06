@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SumArray App</title>
+</head>
+<body>
+    <h1>Welcome to the SumArray App!</h1>
+    
+    <h2>Sum Calculator</h2>
+    <form action="/sum" method="get">
+        <label for="numbers">Enter numbers (comma separated):</label><br>
+        <input type="text" id="numbers" name="numbers" value="" required><br><br>
+        <input type="submit" value="Calculate Sum">
+    </form>
+
+    <!-- Displaying sum if returned from the /sum endpoint -->
+    <div id="result">
+        <h2>Sum: <span id="sum-value">0</span></h2>
+    </div>
+
+    <script>
+        // Get the URL parameters (numbers and sum)
+        const urlParams = new URLSearchParams(window.location.search);
+        const numbers = urlParams.get('numbers');
+        const sumValue = urlParams.get('sum');
+
+        // If numbers exist, put them in the input field
+        if (numbers) {
+            document.getElementById('numbers').value = numbers;
+        }
+
+        // If sumValue exists, display it
+        if (sumValue) {
+            document.getElementById('sum-value').innerText = sumValue;
+        }
+    </script>
+</body>
+</html>

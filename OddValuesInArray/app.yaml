@@ -1,0 +1,9 @@
+runtime: java17
+instance_class: F1
+
+handlers:
+- url: /
+  static_files: src/main/webapp/index.html  # Path to your HTML file
+  upload: src/main/webapp/index.html        # Ensure this matches the path
+- url: /.*
+  script: this field is required, but ignored
